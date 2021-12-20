@@ -25,12 +25,6 @@
             <h3 class="card-title" style="margin-top: 10px;margin-bottom: 10px;">From Edit Users</h3>
             <hr>
             <div class="position-absolute top-50 start-50 translate-middle" style="width: 300px">
-            <?php if(isset($validation)) { ?>
-              <div class="alert alert-danger alert-dismissible fade show" role="alert">
-                <?php echo $validation->listErrors() ?>
-              <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-              </div>
-            <?php } ?>
             </div>
             <form id="database" action="<?php echo base_url('RS/update/'.$user['email']); ?>" method="POST">
             <div class="mb-3">
